@@ -7,86 +7,116 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="https://res.cloudinary.com/dy8u7wrtr/image/upload/v1746430024/PIC_PAVAN_SAI_tocex9.jpg" alt="Pavan Naga Sai" class="profile-image">
-        <h1>Pavan Naga Sai Alapati</h1>
-        <p>Computer Science Graduate | Data Enthusiast</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/your_linkedin_profile" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/your_github_username" target="_blank">GitHub</a> |
-            <a href="mailto:Pavannagasaialapati@gmail.com">Email</a>
-        </div>
-        <button class="download-button">Download Resume</button>
-    </header>
+    <div class="container">
+        <header>
+            <img src="https://res.cloudinary.com/dy8u7wrtr/image/upload/v1746430024/PIC_PAVAN_SAI_tocex9.jpg" alt="Pavan Naga Sai" class="profile-image">
+            <div class="header-info">
+                <h1>Pavan Naga Sai Alapati</h1>
+                <p class="tagline">Computer Science Graduate | Data Enthusiast</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your_linkedin_profile" target="_blank">LinkedIn</a>
+                    <span class="separator">|</span>
+                    <a href="https://github.com/your_github_username" target="_blank">GitHub</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:Pavannagasaialapati@gmail.com">Email</a>
+                </div>
+                <button class="download-button">Download Resume</button>
+            </div>
+        </header>
 
-    <section class="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Master of Science in Computer Science</h3>
-            <p>California State University, San Bernardino</p>
-            <p>2023-2025 | GPA: 3.5/4.0</p>
-        </div>
-        <div class="education-item">
-            <h3>Bachelors of Engineering in Electrical and Electronics Engineering</h3>
-            <p>Vignan's University, INDIA</p>
-            <p>2019-2023 | GPA: 3.57/4.0</p>
-        </div>
-    </section>
+        <main>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="card">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p class="institution">California State University, San Bernardino</p>
+                    <p class="details">2023-2025 | GPA: 3.5/4.0</p>
+                </div>
+                <div class="card">
+                    <h3>Bachelors of Engineering in Electrical and Electronics Engineering</h3>
+                    <p class="institution">Vignan's University, INDIA</p>
+                    <p class="details">2019-2023 | GPA: 3.57/4.0</p>
+                </div>
+            </section>
 
-    <section class="technical-skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Data Analysis & Visualization:</strong> NumPy, Pandas, Matplotlib, Power BI</li>
-            <li><strong>Data engineering and cloud platforms:</strong> AWS (S3, Glue, SageMaker, Lambda, SNS, SQS, EC2, EMR, Redshift), Apache Spark (PySpark), Hadoop Basics, Apache Airflow, ETL Pipelines, Data Warehousing (Star Schema, Snowflake Schema)</li>
-            <li><strong>Machine Learning:</strong> Scikit-learn, Clustering techniques, Regression analysis, classification techniques, LLM's</li>
-            <li><strong>Languages:</strong> Python, C, SQL, NOSQL</li>
-            <li><strong>Database:</strong> Mysql, Mangodb</li>
-            <li><strong>Version Control & Collaboration:</strong> Git, GitHub, Jira</li>
-            <li><strong>Tools & Platforms:</strong> Jupyter Notebook, Google Colab, PyCharm, visual studio</li>
-        </ul>
-    </section>
+            <section class="technical-skills">
+                <h2>Technical Skills</h2>
+                <div class="card">
+                    <ul class="skills-list">
+                        <li>
+                            <strong class="skill-category">Data Analysis & Visualization:</strong>
+                            <span class="skill-items">NumPy, Pandas, Matplotlib, Power BI</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Data engineering and cloud platforms:</strong>
+                            <span class="skill-items">AWS (S3, Glue, SageMaker, Lambda, SNS, SQS, EC2, EMR, Redshift), Apache Spark (PySpark), Hadoop Basics, Apache Airflow, ETL Pipelines, Data Warehousing (Star Schema, Snowflake Schema)</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Machine Learning:</strong>
+                            <span class="skill-items">Scikit-learn, Clustering techniques, Regression analysis, classification techniques, LLM's</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Languages:</strong>
+                            <span class="skill-items">Python, C, SQL, NOSQL</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Database:</strong>
+                            <span class="skill-items">Mysql, Mangodb</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Version Control & Collaboration:</strong>
+                            <span class="skill-items">Git, GitHub, Jira</span>
+                        </li>
+                        <li>
+                            <strong class="skill-category">Tools & Platforms:</strong>
+                            <span class="skill-items">Jupyter Notebook, Google Colab, PyCharm, visual studio</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-    <section class="work-experience">
-        <h2>Work Experience</h2>
-        <div class="experience-item">
-            <h3>Research Intern</h3>
-            <p>Defense research development organization (DRDO), INDIA</p>
-            <p>Feb 2023 - May 2023</p>
-            <ul>
-                <li>Built and deployed a scalable data engineering pipeline using AWS services (S3, Lambda, Glue) to automate ingestion, preprocessing, and transformation of high-frequency sensor data from BLDC motors.</li>
-                <li>Designed and developed scalable ETL workflows for collecting rotor and stator voltage signals, applying feature engineering techniques to extract meaningful insights for predictive...</li>
-            </ul>
-        </div>
-    </section>
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="card">
+                    <h3>Research Intern</h3>
+                    <p class="company">Defense research development organization (DRDO), INDIA</p>
+                    <p class="duration">Feb 2023 - May 2023</p>
+                    <ul>
+                        <li>Built and deployed a scalable data engineering pipeline using AWS services (S3, Lambda, Glue) to automate ingestion, preprocessing, and transformation of high-frequency sensor data from BLDC motors.</li>
+                        <li>Designed and developed scalable ETL workflows for collecting rotor and stator voltage signals, applying feature engineering techniques to extract meaningful insights for predictive...</li>
+                    </ul>
+                </div>
+            </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>AI-Powered Financial Analysis and Summarization Tool</h3>
-            <p>Developed a Streamlit application for real-time financial data analysis and summarization...</p>
-            <p>Integrated OpenAI API for word embeddings and FAISS for efficient vector search...</p>
-            <p>Deployed on Google Colab with LocalTunnel for seamless access.</p>
-        </div>
-        <div class="project-item">
-            <h3>Advanced Face mask detection using machine learning</h3>
-            <p>Developed real-time face mask detection system using machine learning...</p>
-            <p>Integrated with Raspberry Pi to control door access based on mask detection.</p>
-            <p>Engineered a high-performance system leveraging the Support Vector Machine (SVM) algorithm.</p>
-            <p>Integrated Raspberry Pi for end-to-end deployment, automating door access...</p>
-        </div>
-    </section>
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="card">
+                    <h3>AI-Powered Financial Analysis and Summarization Tool</h3>
+                    <p class="description">Developed a Streamlit application for real-time financial data analysis and summarization...</p>
+                    <p class="details">Integrated OpenAI API for word embeddings and FAISS for efficient vector search... Deployed on Google Colab with LocalTunnel for seamless access.</p>
+                </div>
+                <div class="card">
+                    <h3>Advanced Face mask detection using machine learning</h3>
+                    <p class="description">Developed real-time face mask detection system using machine learning...</p>
+                    <p class="details">Integrated with Raspberry Pi to control door access based on mask detection. Engineered a high-performance system leveraging the Support Vector Machine (SVM) algorithm. Integrated Raspberry Pi for end-to-end deployment, automating door access... with system performance validated through Proteus simulations.</p>
+                </div>
+            </section>
 
-    <section class="achievements">
-        <h2>Achievements and Awards</h2>
-        <ul>
-            <li>Awarded the Academic Excellence Award and received a Merit Scholarship at Vignan's University (2022).</li>
-            <li>Won District Medals in the Roller Skating Competition (2019).</li>
-        </ul>
-    </section>
+            <section class="achievements">
+                <h2>Achievements and Awards</h2>
+                <div class="card">
+                    <ul>
+                        <li>Awarded the Academic Excellence Award and received a Merit Scholarship at Vignan's University (2022).</li>
+                        <li>Won District Medals in the Roller Skating Competition (2019).</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Pavan Naga Sai Alapati</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Pavan Naga Sai Alapati</p>
+        </footer>
+    </div>
 
     <script>
         document.querySelector('.download-button').addEventListener('click', function() {
